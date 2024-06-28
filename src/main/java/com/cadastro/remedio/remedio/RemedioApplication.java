@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Description;
 
 @SpringBootApplication
-@OpenAPIDefinition(servers = @Server( url = "/", description = "server raiz do sistema"))
 public class RemedioApplication {
 
 	public static void main(String[] args) {

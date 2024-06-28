@@ -4,6 +4,8 @@ import com.cadastro.remedio.remedio.RemedioAtualizar.RemedioAtualizar;
 import com.cadastro.remedio.remedio.RemedioDto.RemedioDto;
 import com.cadastro.remedio.remedio.RemedioEntity.RemedioEntity;
 import com.cadastro.remedio.remedio.RemedioRepository.RemedioRepository;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.servers.Server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +15,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping
-@CrossOrigin(origins = {"http://cadastro-de-remedio-production.up.railway.app/swagger-ui/index.html", "https://cadastro-de-remedio-production.up.railway.app/swagger-ui/index.html"}) // Permite CORS para http e https
+@OpenAPIDefinition(servers = @Server( url = "/", description = "server raiz do sistema"))
+//@CrossOrigin(origins = {"http://cadastro-de-remedio-production.up.railway.app/swagger-ui/index.html", "https://cadastro-de-remedio-production.up.railway.app/swagger-ui/index.html"}) // Permite CORS para http e https
 
 public class RemedioController {
 
