@@ -10,7 +10,7 @@ public record RemedioDto(
 
         String nome,
         String fornecedor,
-        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
         LocalDate validade
 
 ) {
